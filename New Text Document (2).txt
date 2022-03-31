@@ -1,0 +1,39 @@
+create database SchoolMgmt;
+use SchoolMgmt;
+
+create table student ( 
+	id INT(10) AUTO_INCREMENT, 
+	dept char(30), 
+	name char(30),
+    nid INT(20),
+    birth char(30),
+    address char(30),
+	PRIMARY KEY(id) 
+);
+
+create table teacher ( 
+	id INT(10) AUTO_INCREMENT, 
+	dept char(30), 
+	name char(30),
+    nid INT(20),
+    birth char(30),
+    address char(30),
+	PRIMARY KEY(id) 
+);
+
+create table course ( 
+	id INT(10) AUTO_INCREMENT, 
+	dept char(30), 
+	title char(30),
+    credit float(20),
+    syllabus char(150),
+	PRIMARY KEY(id) 
+);
+
+create table payment ( 
+	payment_id INT(10) AUTO_INCREMENT, 
+	student_id char(30), 
+	amount float(30),
+    date1 char (30),
+	PRIMARY KEY(payment_id) 
+);
